@@ -10,8 +10,22 @@
   font-style: normal;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
 }
+*,*::before,*::after{
+  box-sizing: border-box;
+}
 body {
+  width: 1200px;
+  margin: 0 auto;
   font-family: "PT Sans";
+}
+.page-header {
+  display: flex;
+}
+.header-nav {
+  display: flex;
+}
+.menu {
+  display: flex;
 }
 .menu-item a {
   font-weight: 700;
@@ -99,13 +113,44 @@ body {
   font-size: 22px;
   line-height: 26px;
 }
-.e-maill__input::placeholder{
+.e-maill__input::placeholder {
   font-weight: 400;
-font-size: 18px;
-line-height: 24px;
+  font-size: 18px;
+  line-height: 24px;
 }
-.subscribe__button{
+.subscribe__button {
   font-weight: 700;
-font-size: 20px;
-line-height: 36px;
+  font-size: 20px;
+  line-height: 36px;
+}
+.advantages-list{
+  display:flex;
+  flex-wrap:wrap;
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.advantages-item{
+  width: 33.33%;
+}
+.advantages-item-photo{
+  width:100%;
+  background: #82B3D3;
+  display:flex;
+  flex-wrap:wrap;
+}
+.benefits{
+  display: flex;
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.benefits__item{
+  width: 33.33%;
+}
+.advantages-wrapper{
+  width: 33.33%;
+}
+.advantages-picture{
+  width:66.66%;
 }

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./styles/style.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="header-nav">
         <a href="/" class="header-logon">
           <img src="./imgs/logo.svg" alt="" />
@@ -24,7 +24,7 @@
         </ul>
       </nav>
 
-      <a href="#" class="search">
+      <a href="#" class="search" >
         <img src="./imgs/search.svg" alt="" />
       </a>
       <a href="#" class="favorite">
@@ -32,18 +32,18 @@
       </a>
       <a href="#" class="header-button"> Хочу сюда! </a>
     </header>
-    <main>
-      <section>
+    <main data-test="main">
+      <section data-test="hero">
         <img src="./imgs/welcome.svg" alt="" />
       </section>
-      <section class="text">
+      <section class="text" >
         <h2 class="text-heading">
           Седона — небольшой городок в Аризоне, <br />
           заслуживающий большего!
         </h2>
         <p class="text-paragraph">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
-      <section class="advantages">
+      <section class="advantages" data-test="advantages">
         <ul class="advantages-list">
           <li class="advantages-item advantages-item-photo">
             <div class="advantages-wrapper">
@@ -70,7 +70,7 @@
           <li class="advantages-item advantages-item-photo">
             <img src="./imgs/photo-2.jpg" alt="" class="photo-mountains" />
 
-            <div class="advantages-inform">
+            <div class="advantages-wrapper">
               <h2 class="advantages-inform__title">Там есть мост дьявола</h2>
               <p class="advantages-inform__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
@@ -98,14 +98,16 @@
             </ul>
           </li>
         </ul>
+        </section>
+        <section data-test="search">
         <h2 class="offer__title">Заинтересовались?</h2>
         <p class="offer__description">
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие
           предложения гостиниц в Седоне
         </p>
-        <a class="offer__button"> ПОИСК ГОСТИНИЦЫ В седоне </a>
+        <a class="offer__button" > ПОИСК ГОСТИНИЦЫ В седоне </a>
       </section>
-      <section class="subscribe">
+      <section class="subscribe" data-test="subscribe">
         <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
         <p class="subscribe__description">
           Только полезная информация и никакого спама, честное бойскаутское!
@@ -116,7 +118,7 @@
         </form>
       </section>
     </main>
-    <footer>
+    <footer data-test="footer">
       <ul class="socials">
         <li class="socials__item">
           <a href="#">

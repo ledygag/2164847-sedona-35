@@ -7,7 +7,7 @@
     <title>catalog</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav>
         <a href="/">
           <img src="./imgs/logo.svg" alt="" />
@@ -36,7 +36,7 @@
           </li>
           <li>Гостиницы</li>
         </ul>
-        <form>
+        <form data-test="filter">
           <div>
             <h3>Инфраструктура:</h3>
             <ul>
@@ -134,7 +134,7 @@
         </ul>
       </section>
       <section>
-        <div>
+        <div data-test="catalog">
           <div>
             <a href="#">
               <img src="./imgs/hotel-1.png" alt="" />
@@ -232,7 +232,7 @@
           <a href="#">10</a>
         </div>
       </section>
-      <section>
+      <section data-test="subscribe">
         <h2>Подпишитесь на рассылку</h2>
         <p>
           Только полезная информация и никакого спама, честное бойскаутское!
@@ -243,7 +243,7 @@
         </form>
       </section>
     </main>
-    <footer>
+    <footer data-test="footer">
       <ul>
         <li>
           <a href="#">
