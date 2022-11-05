@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <header class="page-header" data-test="header">
@@ -24,24 +24,28 @@
         </ul>
       </nav>
 
-      <a href="#" class="search" >
-        <img src="./imgs/search.svg" alt="" />
-      </a>
-      <a href="#" class="favorite">
-        <img src="./imgs/Vector.svg" alt="" />
-      </a>
-      <a href="#" class="header-button"> Хочу сюда! </a>
+      <div class="iconki">
+        <a href="#" class="search">
+          <img src="./imgs/search.svg" alt="" />
+        </a>
+        <a href="#" class="favorite">
+          <img src="./imgs/Vector.svg" alt="" />
+        </a>
+        <a href="#" class="header-button"> Хочу сюда! </a>
+      </div>
     </header>
     <main data-test="main">
-      <section data-test="hero">
-        <img src="./imgs/welcome.svg" alt="" />
+      <section data-test="hero" class="welcome">
+        <img src="./imgs/welcome.svg" alt="" class="welcome-img" />
       </section>
-      <section class="text" >
+      <section class="text">
         <h2 class="text-heading">
           Седона — небольшой городок в Аризоне, <br />
           заслуживающий большего!
         </h2>
-        <p class="text-paragraph">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <p class="text-paragraph">
+          Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
+        </p>
       </section>
       <section class="advantages" data-test="advantages">
         <ul class="advantages-list">
@@ -51,34 +55,50 @@
                 Настоящий <br />
                 городок
               </h2>
-              <p class="advantages-paragraph">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <p class="advantages-paragraph">
+                Седона — не аттракцион для туристов, там течёт своя жизнь
+              </p>
             </div>
             <img src="./imgs/photo-1.jpg" alt="" class="advantages-picture" />
           </li>
-          <li class="advantages-item">
-            <h2  class="advantages-item-heading">Небольшая площадь</h2>
-            <p class="advantages-item-text">Все достопримечательности находятся очень близко</p>
+          <li class="advantages-item advantages-item-small" >
+            <h2 class="advantages-item-heading">Небольшая площадь</h2>
+            <p class="advantages-item-text">
+              Все достопримечательности находятся очень близко
+            </p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item  advantages-item-small">
             <h2 class="advantages-item-heading">Красивая дорога</h2>
-            <p class="advantages-item-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <p class="advantages-item-text">
+              Ехать в Седону из Лас-Вегаса совсем не скучно!
+            </p>
           </li>
-          <li class="advantages-item">
-            <h2 class="advantages-item-heading">Мало тbenefits__titуристов</h2>
-            <p class="advantages-item-text">Большинство едет в Гранд Каньон и толпится там</p>
+          <li class="advantages-item  advantages-item-small">
+            <h2 class="advantages-item-heading">Мало туристов</h2>
+            <p class="advantages-item-text">
+              Большинство едет в Гранд Каньон и толпится там
+            </p>
           </li>
           <li class="advantages-item advantages-item-photo">
-            <img src="./imgs/photo-2.jpg" alt="" class="photo-mountains" />
+            <img src="./imgs/photo-2.jpg" alt="" class="advantages-picture" />
 
             <div class="advantages-wrapper">
-              <h2 class="advantages-inform__title">Там есть мост дьявола</h2>
-              <p class="advantages-inform__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              <h2 class="advantages-title">Там есть мост дьявола</h2>
+              <p class="advantages-paragraph">
+                Да, по нему можно пройти! Если вы осмелитесь, разумеется
+              </p>
             </div>
             <ul class="benefits">
               <li class="benefits__item">
-                <img src="./imgs/picture1.svg" alt="" class="benefits__picture" />
+                <img
+                  src="./imgs/picture1.svg"
+                  alt=""
+                  class="benefits__picture"
+                />
                 <h2 class="benefits__title">Жильё</h2>
-                <p class="benefits__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                <p class="benefits__description">
+                  Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                </p>
               </li>
               <li class="benefits__item">
                 <img src="./imgs/food.svg" alt="" class="benefits__picture" />
@@ -89,7 +109,11 @@
                 </p>
               </li>
               <li class="benefits__item">
-                <img src="./imgs/picture2.svg" alt="" class="benefits__picture" />
+                <img
+                  src="./imgs/picture2.svg"
+                  alt=""
+                  class="benefits__picture"
+                />
                 <h2 class="benefits__title">Сувениры</h2>
                 <p class="benefits__description">
                   Не только китайского, но и настоящего местного производства!
@@ -98,27 +122,29 @@
             </ul>
           </li>
         </ul>
-        </section>
-        <section data-test="search">
+      </section>
+      <section data-test="search">
         <h2 class="offer__title">Заинтересовались?</h2>
         <p class="offer__description">
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+          Укажите предполагаемые даты поездки,<br />
+          и мы покажем вам лучшие
           предложения гостиниц в Седоне
         </p>
-        <a class="offer__button" > ПОИСК ГОСТИНИЦЫ В седоне </a>
+        <a class="offer__button" href="#"> ПОИСК ГОСТИНИЦЫ В седоне </a>
       </section>
       <section class="subscribe" data-test="subscribe">
         <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
         <p class="subscribe__description">
-          Только полезная информация и никакого спама, честное бойскаутское!
+          Только полезная информация и никакого спама,<br>
+           честное бойскаутское!
         </p>
-        <form action="/">
+        <form action="/" class="email-form">
           <input type="text" placeholder="Ваш e-mail" class="e-maill__input" />
           <button class="subscribe__button">Подписаться</button>
         </form>
       </section>
     </main>
-    <footer data-test="footer">
+    <footer data-test="footer" class="footer">
       <ul class="socials">
         <li class="socials__item">
           <a href="#">
@@ -136,7 +162,7 @@
           </a>
         </li>
       </ul>
-      <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a href="tel:+78128121212" class="footer-phone">+7 (812) 812-12-12</a>
       <a href="https://htmlacademy.ru/" class="socials__item">
         <img src="./imgs/HTML Academy.svg" alt="" />
       </a>
