@@ -24,7 +24,11 @@
 .benefits__picture {
 }
 body {
+  display:grid;
+  grid-template-columns: 100%;
+  grid-template-rows: min-content 1fr min-content;
   width: 1200px;
+  min-height: 100vh;
   margin: 0 auto;
   font-family: "PT Sans";
 }
@@ -282,11 +286,13 @@ body {
 .footer {
   height: 120px;
   width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
   align-items: center;
 }
 .socials {
+  grid-column: 1/2;
   display: flex;
   align-items: center;
 }
@@ -295,11 +301,16 @@ body {
   margin-right: 27px;
 }
 .footer-phone {
+  grid-column: 2/3;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
   color: black;
+}
+.footer-copyright{
+  grid-column: 3/4;
+  justify-self: end;
 }
 .subscribe {
   background: url(../imgs/feedback-bg.jpg) no-repeat center center;
