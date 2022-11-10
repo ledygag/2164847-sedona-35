@@ -15,9 +15,12 @@
 *::after {
   box-sizing: border-box;
 }
+.advantages{
+  margin-top: 90px;
+}
 .benefits__item {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
 }
@@ -36,11 +39,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding:0 70px 0 70px;
 }
 .header-nav {
   display: flex;
 }
 .menu {
+  padding:3px 0 0 44px;
   display: flex;
 }
 .menu-item a {
@@ -55,14 +60,41 @@ body {
   margin-right: 32px;
 }
 .search {
-  margin-right: 25px;
+  margin-right: 18px;
   text-decoration: none;
 }
+.text{
+margin-top:58px;s
+}
+.search img{
+  margin-top:-5px;
+}
 .favorite {
+  position: relative;
   margin-right: 32px;
   text-decoration: none;
 }
+.favorite-number{
+  font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 10px;
+color:#fff;
+background: #7DB54F;
+border-radius: 10px;
+width:20px;
+height: 20px;
+display:flex;
+align-items: center;
+justify-content: center;
+position: absolute;
+right: -7px;
+top: -15px;
+
+}
 .iconki {
+  margin-top:-10px;
   align-items: center;
 }
 .welcome {
@@ -89,6 +121,19 @@ body {
   padding: 8px 34px;
   text-transform: uppercase;
 }
+.header-button:hover{
+  background: #615048;
+
+}
+.header-button:focus{
+  background: #615048;
+
+}
+.header-button:active{
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
+
+}
 .text-heading {
   font-weight: 700;
   font-size: 30px;
@@ -104,6 +149,7 @@ body {
   text-align: center;
 }
 .advantages-wrapper {
+  height: 181px;
   padding: 92px 85px 111px;
 }
 .advantages-title {
@@ -114,6 +160,7 @@ body {
   color: white;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 0;
 }
 .advantages-paragraph {
   font-weight: 400;
@@ -121,13 +168,14 @@ body {
   line-height: 21px;
   color: white;
   text-align: center;
+  margin-top: 62px;
 }
 .advantages-item-heading {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   text-transform: uppercase;
   padding: 0 24px;
 }
@@ -156,13 +204,17 @@ body {
   line-height: 28px;
   margin-top: 31px;
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 .benefits__description {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  margin: 30px;
+  margin: 27px auto 0;
+}
+.benefits__description-food{
+  margin-top: 33px;
 }
 .offer__title {
   font-weight: 700;
@@ -198,7 +250,18 @@ body {
   margin-top: 54px;
   margin-bottom: 96px;
 }
+.offer__button:hover{
+ background: #615048;
+}
+.offer__button:focus{
+  background: #615048;
+}
+.offer__button:active{
+  background: #756157;
+}
 .subscribe__title {
+  margin: 0;
+  color: #fff;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -206,6 +269,7 @@ body {
   text-transform: uppercase;
 }
 .subscribe__description {
+  margin: 23px auto 50px;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -213,6 +277,7 @@ body {
   color: white;
 }
 .e-maill__input {
+  font-family: "PT Sans";
   width: 452px;
   height: 52px;
   background: #f2f2f2;
@@ -221,12 +286,24 @@ body {
   outline: none;
   padding: 14px 20px;
 }
+.e-maill__input:focus{
+  background: #E6E6E6;
+}
+.e-maill__input:hover{
+  background: #E6E6E6;
+}
+.e-maill__input:active{
+  background: #F2F2F2;
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
 .e-maill__input::placeholder {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
 }
 .subscribe__button {
+  font-family: "PT Sans";
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -235,7 +312,16 @@ body {
   background: #82b3d3;
   border-radius: 0 4px 4px 0;
   border-color: transparent;
-  padding: 8px 50px;
+  padding: 4px 48px;
+}
+.subscribe__button:hover{
+  background: #68A2CA;
+}
+.subscribe__button:focus{
+  background: #68A2CA;
+}
+.subscribe__button:active{
+  background: #68A2CA;
 }
 .advantages-list {
   display: flex;
@@ -248,7 +334,8 @@ body {
   width: 33.33%;
 }
 .advantages-item-small {
-  padding: 135px 85px 121px;
+  height: 384px;
+  padding: 103px 83px 121px;
 }
 .advantages-item-photo {
   width: 100%;
@@ -264,6 +351,7 @@ body {
   background: #fff;
 }
 .benefits__item {
+  margin-top: 0;
   padding: 80px 85px;
   width: 33.33%;
 }
@@ -284,6 +372,7 @@ body {
   justify-content: center;
 }
 .footer {
+  padding: 45px 70px 45px 81px;
   height: 120px;
   width: 100%;
   display: grid;
@@ -292,6 +381,8 @@ body {
   align-items: center;
 }
 .socials {
+  margin: 0;
+  padding: 0;
   grid-column: 1/2;
   display: flex;
   align-items: center;
@@ -301,6 +392,7 @@ body {
   margin-right: 27px;
 }
 .footer-phone {
+  margin-left: 17px;
   grid-column: 2/3;
   font-weight: 400;
   font-size: 40px;
@@ -308,13 +400,35 @@ body {
   text-decoration: none;
   color: black;
 }
-.footer-copyright{
+.footer-phone:hover{
+  color: #756157;
+}
+.footer-phone:focus{
+  color: #756157;
+}
+.footer-phone:active{
+  color: rgba(117, 97, 87, 0.3);
+}
+.footer-copyright {
   grid-column: 3/4;
   justify-self: end;
 }
+.footer-copyright path{
+
+  fill: black;
+}
+.footer-copyright:hover path{
+  fill: #756157;
+}
+.footer-copyright:focus path{
+  fill: #756157;
+}
+.footer-copyright:active path{
+  fill: rgba(117, 97, 87, 0.3);
+}
 .subscribe {
   background: url(../imgs/feedback-bg.jpg) no-repeat center center;
-  padding: 100px;
+  padding: 96px 260px 106px;
 }
 .visually-hidden {
   position: absolute;
@@ -327,4 +441,19 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+.margin-data-tesst{
+margin-top: 75px;
+}
+.socials__link svg {
+  fill: #83B3D3;
+}
+.socials__link:hover svg{
+  fill: #68A2CA;
+}
+.socials__link:focus svg{
+  fill: #68A2CA;
+}
+.socials__link:active svg{
+  fill: rgba(104, 162, 202, 0.3);
 }
