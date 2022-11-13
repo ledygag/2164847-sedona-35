@@ -26,6 +26,9 @@
 }
 .benefits__picture {
 }
+html{
+  background: #F2F2F2;
+}
 body {
   display:grid;
   grid-template-columns: 100%;
@@ -34,6 +37,8 @@ body {
   min-height: 100vh;
   margin: 0 auto;
   font-family: "PT Sans";
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  background-color: #FFFFFF;
 }
 .page-header {
   display: flex;
@@ -104,7 +109,6 @@ top: -15px;
   height: 485px;
   position: relative;
   top: -10px;
-  z-index: -1;
 }
 .welcome-img {
   margin-top: 50px;
