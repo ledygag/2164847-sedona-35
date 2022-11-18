@@ -680,7 +680,7 @@ body {
 }
 
 .form__input.date {
-	background-image: url(../imgs/input_calendar.svg);
+	background-image: url(../imgs/input-calendar.svg);
 	background-repeat: no-repeat;
 	background-position: right 20px center;
 }
@@ -693,7 +693,8 @@ body {
 	width: 34px;
 }
 
-.form__popover-text {
+.form__popo
+r-text {
 	display: none;
 }
 
