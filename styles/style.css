@@ -138,7 +138,7 @@ body {
 	height: 485px;
 	position: relative;
 	top: -10px;
-	background-color: #FFFFFF;
+	background-color: #3f4d58;
 }
 
 .welcome-img {
@@ -519,6 +519,7 @@ body {
 .subscribe {
 	background: url(../imgs/feedback-bg.jpg) no-repeat center center;
 	padding: 96px 260px 106px;
+	background-color: #447daa;
 }
 
 .visually-hidden {
